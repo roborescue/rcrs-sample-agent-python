@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 launcher.py $*
+python3 launch.py $*
 
 
 
