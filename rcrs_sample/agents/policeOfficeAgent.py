@@ -6,7 +6,10 @@ class PoliceOfficeAgent(Agent):
     def __init__(self, pre):
         Agent.__init__(self, pre)
         self.name = 'PoliceOfficeAgent'
-    
+
+    def precompute(self):
+        self.Log.info('precompute finshed')
+
     def get_requested_entities(self):
         return [URN.Entity.POLICE_OFFICE]
 

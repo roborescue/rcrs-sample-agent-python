@@ -7,6 +7,9 @@ class AmbulanceCenterAgent(Agent):
         Agent.__init__(self, pre)
         self.name = 'AmbulanceCenterAgent'
 
+    def precompute(self):
+        self.Log.info('precompute finshed')
+
     def get_requested_entities(self):
         return [URN.Entity.AMBULANCE_CENTRE]
 

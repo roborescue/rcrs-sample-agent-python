@@ -8,6 +8,9 @@ class FireStationAgent(Agent):
         Agent.__init__(self, pre)
         self.name = 'FireStationAgent'
     
+    def precompute(self):
+        self.Log.info('precompute finshed')
+    
     def get_requested_entities(self):
         return [URN.Entity.FIRE_STATION]
 
